@@ -19,7 +19,14 @@ class PostSeeder extends Seeder
             'body' => '一発を狙おう',
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
-
+            'category_id' => 1
+        ]);
+        DB::table('posts')->insert([
+            'title' => 'スマブラの勝ち方',
+            'body' => 'ガーキャン上B',
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
+            'category_id' => 2
         ]);
     }
 }
